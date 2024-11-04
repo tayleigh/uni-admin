@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Navigation Example</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" media="screen" href="css/styles.min.css">
+
+<!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Spline+Sans:wght@300;500&display=swap" rel="stylesheet">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+</head>
+
+<body>
+<div id="headerWrapper">
+	<header id="top">
+        
+        <img src="images/logo1x.png" alt="logo">
+	
+		<span>Alabama Assembly</span>
+        <a href="#navlinks">&#9776;</a>
+	</header>
+</div><!-- end header wrapper -->
+
+    
+    
+<div id="navWrapper">
+    <nav id="navlinks">
+        <a href="#top">&#10005</a>
+        <ul>
+            <li><a href="#">Students</a></li>
+            <li><a href="#">Services</a></li>
+            <li class="active"><a href="#">Apply</a></li>
+            <li><a href="#">Tuition</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+</div> <!-- end nav wrapper -->
+
+<div id="mainWrapper">
+    <main>
+
+        <h1>Apply</h1>
+        <p>Thank you for for your interest in Alabama Assembly Academic University. Please fill out the form below and we will consider your application. Go Narwhales!</p>
+      
+        <form method="GET" action="thanks.html" class="my-form" autocomplete="on">
+            <h3>Personal Information</h3>
+            <label>First Name: <input type="text" name="fname" autocomplete="given-name" required title="First Name here"></label>
+
+            <label>Last Name: <input type="text" name="lname" autocomplete="family-name" required title="Last Name here"></label>
+
+            <label>Email: <input type="email" name="email" autocomplete="email" required title="example@email.com"></label>
+            
+            <label>Cell Phone: <input type="tel" name="phone" autocomplete="tel" required title="000-000-0000"></label>
+
+            <h3>Communication Prefrences</h3>
+            <label><input type="radio" name="comunicate" value="email">Email Updates</label>
+            <label><input type="radio" name="comunicate" value="text">text Updates</label>
+            <label><input type="radio" name="comunicate" value="call">call Updates</label>
+
+            <h3>Previous School Information</h3>
+            <label>
+                <select name="school">
+                    <option value="no selection made">Please Select</option>
+                    <option value="CC">Community College</option>
+                    <option value="4year">4 Year Univeristy</option>
+                    <option value="Trade">Trade school</option>
+                    <option value="hs">high school</option>
+                    <option value="none">none</option>
+
+                </select>
+            </label>
+
+            <h3>Education Completed</h3>
+            <label><input type="checkbox" name="hs complete">High School</label>
+            <label><input type="checkbox" name="ged">GED</label>
+            <label><input type="checkbox" name="AS">Associates</label>
+
+
+
+            <h3>Account Information</h3>
+            <label>Username (6-10 letters)<input type="text" required pattern="[A-Za-z]{6,10}" title="Username (6-10 letters)"></label>
+
+            <label>Password (at least 6 characters)<input type="password" required minlength="6" title="Password" name="password"></label>
+
+            <input type="submit" value="Apply">
+        </form>
+
+    </main>
+</div><!-- end main wrapper -->
+    
+<div id="footerWrapper">
+    <footer>
+        <p>Copyright &copy; 2025 Tayleigh Ward 
+            <a href="#">Privacy Policy</a> | <a href="#">Terms of Use</a> | <a href="#">Clients</a></p>
+    </footer>
+</div> <!-- end footer wrapper -->
+   
+</body>
+</html> 
