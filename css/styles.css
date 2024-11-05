@@ -376,7 +376,7 @@ nav li a {
   text-align: right;
   border-bottom: 1px solid #ccc;
 }
-nav .active a {
+nav li a {
   color: #9B6241;
 }
 
