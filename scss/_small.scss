@@ -58,24 +58,29 @@ font-size: 2rem;
 }
 nav {
     height: 100vh;
+    
     ul {
-        list-style-type:none;
+        list-style-type: none;
         margin: 0;
-        padding:0;
-    }
-    li a {
-        display: block;
-        color: $primaryColor;
-        padding:.9rem 2vw;
-        text-decoration: none;
-        text-align: right;
-        border-bottom: 1px solid $greyColor;
+        padding: 0;
 
+        li {
+            a {
+                display: block;
+                color: $primaryColor;
+                padding: 0.9rem 2vw;
+                text-decoration: none;
+                text-align: right;
+                border-bottom: 1px solid $greyColor;
+            }
+
+            &.active a {
+                color: $secondaryColor;
+            }
+        }
     }
-    li a {
-      color: $secondaryColor  
-    }
-}//end nav
+} // end nav
+
 
 
 
