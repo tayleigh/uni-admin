@@ -72,7 +72,7 @@ nav {
         border-bottom: 1px solid $greyColor;
 
     }
-    li.active{
+    li.active a {
       color: $secondaryColor  
     }
 }//end nav
